@@ -7,7 +7,7 @@ It must not contain any game logic, Pygame imports, or state management.
 from typing import List, Tuple, Dict
 
 # Import piece IDs from constants.py to ensure consistency
-from game import constants
+import constants
 
 # Type alias for clarity
 Shape = List[Tuple[int, int]] # List of (row, col) offsets
