@@ -87,3 +87,6 @@ architecture decisions made this session.
 - If a task spans two files, do them in separate steps.
 - python -m py_compile is your friend. Run it after every file change.
 - pygame.init() only in main.py. Never call it elsewhere.
+- All project files are pre-created empty. Always read a file before writing to it,
+  even if you expect it to be empty. The Write tool requires a prior Read on any
+  existing file or it will error.
