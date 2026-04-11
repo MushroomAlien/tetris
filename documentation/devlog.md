@@ -59,3 +59,15 @@ Next step: write game/input_handler.py
 Next step: write game/renderer.py
 
 ---
+
+## 2026-04-12 — 01.2604.0010
+
+- Written game/renderer.py with Renderer class
+- Methods: draw_background, draw_board, draw_piece, refresh
+- No game logic, no board imports, draw only
+- GREY border hardcoded as (100, 100, 100) instead of constants.GREY — minor, not a blocker
+- draw_board uses board.rows and board.cols — verify these attributes exist in Board.__init__ when game.py is wired up
+- Syntax verified: python -m py_compile game/renderer.py passed
+- Committed and pushed to main
+
+Next step: write game/game.py
