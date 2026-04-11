@@ -90,3 +90,5 @@ architecture decisions made this session.
 - All project files are pre-created empty. Always read a file before writing to it,
   even if you expect it to be empty. The Write tool requires a prior Read on any
   existing file or it will error.
+- Never delete or overwrite existing devlog content. The devlog is append-only.
+  If you are told to "update" the devlog, find the end of the file and ADD a new entry.

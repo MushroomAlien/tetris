@@ -24,6 +24,7 @@
 Next step: write game/tetromino.py
 
 ---
+
 ## 2026-04-12 — 01.2604.0004
 
 - Written game/tetromino.py with all 7 piece shapes and rotation logic
@@ -33,5 +34,28 @@ Next step: write game/tetromino.py
 - Committed and pushed to main
 
 Next step: write game/board.py
+
+---
+
+## 2026-04-12 — 01.2604.0006
+
+- Written game/board.py with Board class
+- Methods: __init__, is_valid_position, place_piece, clear_lines, get_cell
+- No pygame imports, no game logic, grid state only
+- Syntax verified: python -m py_compile game/board.py passed
+- Committed and pushed to main
+
+Next step: write game/input_handler.py
+
+---
+
+## 2026-04-12 — 01.2604.0008
+
+- Written game/input_handler.py with InputHandler class
+- Translates pygame events to abstract actions (MOVE_LEFT, MOVE_RIGHT, MOVE_DOWN, ROTATE, QUIT)
+- Syntax verified: python -m py_compile game/input_handler.py passed
+- Committed and pushed to main
+
+Next step: write game/renderer.py
 
 ---
