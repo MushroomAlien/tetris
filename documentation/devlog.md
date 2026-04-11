@@ -24,3 +24,14 @@
 Next step: write game/tetromino.py
 
 ---
+## 2026-04-12 — 01.2604.0004
+
+- Written game/tetromino.py with all 7 piece shapes and rotation logic
+- Fixed import from 'from game import constants' to 'import constants'
+- Updated CLAUDE.md Gotchas section: read before write rule for pre-created empty files
+- Syntax verified: python -m py_compile game/tetromino.py passed
+- Committed and pushed to main
+
+Next step: write game/board.py
+
+---
