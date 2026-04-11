@@ -19,5 +19,8 @@
 - Created game/constants.py with grid dimensions, screen dimensions, timing, colours, and tetromino IDs
 - Syntax verified: python -m py_compile game/constants.py passed with no errors
 - No other files modified
+- GitHub repo created: https://github.com/MushroomAlien/tetris
+
+Next step: write game/tetromino.py
 
 ---
