@@ -49,6 +49,12 @@ main.py → game.py → board.py
 Do these in order. Do not skip. Do not combine into one message.
 
 ### 1. Append to devlog
+
+Rules:
+- APPEND ONLY. Never edit, delete, or rewrite existing devlog content.
+- Altering or deleting existing text in devlog.md is never allowed!
+- If the file does not exist, create it. If it exists, only add to the end.
+
 Open `documentation/devlog.md` and append a new entry at the bottom:
 
 ```
@@ -61,10 +67,6 @@ Open `documentation/devlog.md` and append a new entry at the bottom:
 
 ---
 ```
-
-Rules:
-- APPEND ONLY. Never edit, delete, or rewrite existing devlog content.
-- If the file does not exist, create it. If it exists, only add to the end.
 
 ### 2. Git commit and push
 Run these commands in order:
@@ -90,5 +92,5 @@ architecture decisions made this session.
 - All project files are pre-created empty. Always read a file before writing to it,
   even if you expect it to be empty. The Write tool requires a prior Read on any
   existing file or it will error.
-- Never delete or overwrite existing devlog content. The devlog is append-only.
-  If you are told to "update" the devlog, find the end of the file and ADD a new entry.
+- `documentation/devlog.md` has existing content. Never use Write to update it — always use the Update/append tool and add only at the end.
+- Never delete or overwrite existing devlog content. The devlog is append-only: find the end of the file and ADD a new entry without touching the existing text.
