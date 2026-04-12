@@ -71,3 +71,16 @@ Next step: write game/renderer.py
 - Committed and pushed to main
 
 Next step: write game/game.py
+
+---
+
+## 2026-04-12 — 01.2604.0012
+
+- Fixed game/board.py __init__ — self.cols had no indentation and self.grid was missing
+- Added self.rows and self.cols attributes to Board (required by renderer.py)
+- Syntax verified: python -m py_compile game/board.py passed
+- Committed and pushed to main
+
+Next step: write game/game.py
+
+---
