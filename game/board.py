@@ -8,6 +8,8 @@ class Board:
 
     def __init__(self):
         """Initialises the board grid."""
+        self.rows = constants.ROWS
+        self.cols = constants.COLS
         self.grid = [[0 for _ in range(constants.COLS)] for _ in range(constants.ROWS)]
 
     def is_valid_position(self, cells):
