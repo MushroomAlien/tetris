@@ -20,3 +20,9 @@ class Game:
 
     def get_current_cells(self):
         return [(self.row + dr, self.col + dc) for dr, dc in tetromino.get_shape(self.piece_id, self.rotation)]
+
+    def update(self):
+        self.frame_counter += 1
+        if self.frame_counter >= constants.FALL_INTERVAL:
+            self.frame_counter = 0
+            self.row += 1
