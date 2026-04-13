@@ -96,3 +96,16 @@ Next step: write game/game.py
 Next step: add landing detection to update() — piece should stop and stick when it hits the bottom or another piece
 
 ---
+
+## 2026-04-12 — 01.2604.0016
+
+- Added landing detection to game/game.py
+- Piece now stops when it hits the floor or another piece
+- Locked piece is placed onto the board, lines are cleared, new piece spawns
+- Fixed duplicate class definition caused by Gemma's broken write
+- Syntax verified: python -m py_compile game/game.py passed
+- Committed and pushed to main
+
+Next step: write game/main.py
+
+---
