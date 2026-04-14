@@ -23,8 +23,7 @@ COLOR_Z = (255, 0, 0)    # Red
 COLOR_J = (0, 0, 255)    # Blue
 COLOR_L = (255, 165, 0)  # Orange
 
-# --- Tetromino Identifiers ---
-# Integer IDs mapping to piece type for board state tracking
+# Tetromino Identifiers
 ID_I = 0
 ID_O = 1
 ID_T = 2
@@ -34,9 +33,6 @@ ID_J = 5
 ID_L = 6
 
 # Dictionary mapping IDs to colors for easier lookup elsewhere
-# Although the rule says no logic, providing this mapping as a constant structure is acceptable for clarity
-# If this is too much logic, we can simplify to just keep the two ID/Color groups separate.
-# For now, I will include it as a constant dictionary as it aids organization.
 TETROMINO_COLORS = {
     ID_I: COLOR_I,
     ID_O: COLOR_O,
@@ -46,3 +42,12 @@ TETROMINO_COLORS = {
     ID_J: COLOR_J,
     ID_L: COLOR_L,
 }
+
+# --- Input/Action Constants (Copied from input_handler.py) ---
+ACTION_NONE = 0
+ACTION_MOVE_LEFT = 1
+ACTION_MOVE_RIGHT = 2
+ACTION_ROTATE = 3
+ACTION_SOFT_DROP = 4
+ACTION_HARD_DROP = 5
+ACTION_QUIT = 6
